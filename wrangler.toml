@@ -1,0 +1,13 @@
+# Cloudflare Worker 配置文件
+name = "lexica-2api-cfwork"
+main = "worker.js"
+compatibility_date = "2025-11-26"
+
+# Worker 类型设置
+# 使用 Service Worker 语法（addEventListener）
+workers_dev = true
+
+# 可选：设置自定义域名（需要先在 Cloudflare 配置）
+# routes = [
+#   { pattern = "your-domain.com/*", zone_name = "your-domain.com" }
+# ]
